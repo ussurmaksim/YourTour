@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-black: #1B1F2B;
+    --color-orange200: #EFA501;
+    --color-orange100: #F8E6BE;
+    --color-green400: #286562;
+    --color-green300: #3B7E7B;
+    --color-green200: #627F7E;
+    --color-green100: #E0F0E5;
+    --color-gray300: #A6A6A6;
+    --color-gray200: #D9DFDB;
+    --color-gray100: #F1F3F2;
+    --color-biedge200: #F4F0E9;
+    --color-biedge100: #F9F7F4;
+    
+
+    
+}
+
+h1, h2, h3, p {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 96px;
+    line-height: 104.64px;
+}
+
+h2 {
+    font-size: 59px;
+    line-height: 73.16px;
+}
+
+h3 {
+    font-size: 35px;
+    line-height: 42.7px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 28.4px; 
+}
+
+.strong{
+    font-size: 23px;
+    line-height: 28.06px; 
+    font-weight: 700;
+}
+
+.small{
+    font-size: 17px;
+    line-height: 24.14px; 
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--color-biedge100);
+}
+
+.nav-link {
+    font-size: 20px;
+    line-height: 28.4px; 
+}
+
+section {
+    padding-top: 135px;
+}
+
+@media screen and (max-width: 575px) {
+    h1 {
+        font-size: 34px;
+        line-height: 38.08px;
+    }
+
+    h2 {
+        font-size: 34px;
+        line-height: 38.08px;
+    }
+
+    h3 {
+        font-size: 23px;
+        line-height: 27.6px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 22.72px; 
+    }
+    
+    p strong{
+        font-size: 16px;
+        line-height: 22.72px; 
+        font-weight: 700;
+    }
+    
+    p small{
+        font-size: 16px;
+        line-height: 22.72px;  
+        font-weight: 400;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        line-height: 22.72px; 
+    }
+    
+}
+
+
+.start-section {
+    background-image: url(../img/header-img.jpg);
+    color: #fff;
+    
+    height: 831px;
+    
+    
+    text-align: center;
+}
+
+.start-section-nav {
+    padding: 29px 0;
+    /* max-width: 1168px; */
+}
+
+.start-section-block h1 {
+    margin: 119px auto 50px;
+    
+    text-align: center;
+}
+
+.start-section-block .btn {
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 20px;
+    margin-top: 55px;
+}
+
+.nav-links {
+    max-width: 486px;
+    margin: 0 181.58px;
+}
+
+.nav-links .nav-link:not(:last-child) {
+    margin-right: 50px;
+}
+
+.tour-links {
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 100px;
+}
+
+.tour-link {
+    color: var(--color-black);
+    text-decoration: none;
+    padding: 0 0 6px;
+    margin: 0 15px;
+}
+
+.tour-link.active {
+    color: var(--color-orange200);
+    border-bottom: var(--color-orange200) 2px solid;
+}
+
+.tours .cards {
+    justify-content: center;
+}
+
+.tours .card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    z-index: -1;
+    transition: 300ms ease;
+}
+
+.tours .card:hover img {
+    transform: scale(1.2);  
+}
+
+.tours .card {
+    width: 370px;
+    height: 531px;
+    margin: 15px;
+    border-radius: 50px;
+    padding: 50px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.tours .card h3 {
+    margin-bottom: 16px;
+    max-width: 242px;
+}
+
+.btn-card {
+    margin-top: auto;
+    padding: 7px 20px;
+    max-width: 198px;
+    color: #fff;
+    font-size: 23px;
+    line-height: 28.06px; 
+    font-weight: 700;
+    border-radius: 50px;
+    
+}
+
+.tours .card:hover .btn-card{
+    background-color: var(--color-green400);
+}
+
+
