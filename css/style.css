@@ -154,6 +154,10 @@ section {
     margin-right: 50px;
 }
 
+a.nav-link:hover {
+    border-bottom: #fff solid 1px;
+}
+
 .tour-links {
     display: flex;
     justify-content: center;
@@ -196,10 +200,13 @@ section {
     border-radius: 50px;
     padding: 50px;
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.card {
     color: #fff;
     position: relative;
     overflow: hidden;
-    
+    border-radius: 50px;
 }
 
 .tours .card h3 {
@@ -223,4 +230,249 @@ section {
     background-color: var(--color-green400);
 }
 
+.histories .card:hover .btn-card{
+    background-color: var(--color-green400);
+}
 
+.section-description {
+    color: var(--color-gray300);
+    text-align: center;
+    margin: 30px 0 100px;
+}
+
+.form-wrapper {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 70px;
+}
+
+
+.data label, .data input, .data textarea {
+    width: 100%;
+}
+
+.data label { 
+    margin-bottom: 8px;
+    color: var(--color-black);
+}
+
+.data input::placeholder {
+    color: var(--color-gray300);
+    font-size: 20px;
+}
+
+.data input, .data textarea {
+    padding: 20px;
+    background-color: var(--color-biedge100);
+    border: 1px solid var(--color-biedge200);
+    border-radius: 10px;
+    margin-bottom: 33px;
+    color: var(--color-black);
+}
+
+.is-adult {
+    margin-bottom: 8px;
+}
+
+.btn-green-lite {
+    background-color: var(--color-green100);
+    color: var(--color-green400);
+}
+
+.btn-green {
+    background-color: var(--color-green400);
+    color: #fff;
+}
+
+form .btn-green {
+    margin-right: 30px;
+}
+
+form .btn {
+    text-align: center;
+    width: 235px;
+    padding: 15px 0;
+    margin-top: 33px;
+    border-radius: 10px;
+}
+
+.review-wrapper {
+    background-color: var(--color-biedge200);
+    border-radius: 50px;
+    padding: 40px;
+    width: 570px;
+    min-height: 673px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+
+.review-wrapper p.small {
+    color: var(--color-gray300);
+    margin-top: 8px;
+}
+
+.reviewer { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewer img {
+    border-radius: 100px;
+    width: 75px;
+    height: 75px;
+}
+
+.container-images {
+    margin: 0 15px;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.images img {
+    border-radius: 50px;
+    padding: 0 15px;
+}
+
+.images-big img {
+    width: 444px;
+    height: 301px;
+}
+
+.images-small {
+    padding: 30px 0;
+}
+
+.images-small img {
+    width: 349px;
+    height: 301px;
+}
+
+.histories .card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    z-index: -1;
+    transition: 300ms ease;
+}
+
+.histories .card {
+    width: 1170px;
+    height: 567px;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 60px;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.histories .card:hover img {
+    transform: scale(1.2);
+}
+
+.card-bottom-menu {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.card-messengers {
+    display: flex;
+    align-items: center;
+}
+
+.card-messengers a {
+    color: #fff;
+    margin-left: 35px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card-messengers a:hover { 
+    border-bottom: 1px #fff solid;
+    cursor: pointer;
+}
+
+.histories .card h3 {
+    margin-bottom: 37px;
+}
+
+.histories .card ul {
+    margin-top: 29px;
+}
+
+
+.histories .card li::marker{
+    font-size: 70%;
+    color: #fff;
+    vertical-align: bottom;
+ }
+
+
+.footer-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-email p {
+    color: var(--color-gray300);
+}
+
+.footer-email img {
+    border-radius: 50px;
+    width: 370px;
+    height: 370px;
+    margin-right: 30px;
+}
+
+.footer-email .email {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.footer-email .email:hover {
+    border-bottom: var(--color-black) solid 1px;
+}
+
+footer {
+    margin-top: 135px;
+    background-color: var(--color-biedge200);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+p.footer-heading {
+    color: var(--color-gray300);
+}
+
+.messengers {
+    display: flex;
+}
+
+.messengers > div {
+    display: flex;
+    margin-left: 25px;
+    align-items: center;
+}
+
+.messengers > div a:hover {
+    margin-bottom: -1px;
+    border-bottom: var(--color-black) 1px solid;
+    cursor: pointer;
+}
+
+.messengers > div svg {
+    margin-right: 10px;
+}
